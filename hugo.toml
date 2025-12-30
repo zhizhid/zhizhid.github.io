@@ -1,6 +1,6 @@
 baseURL = 'https://zhizhid.github.io/'
 languageCode = 'en-us'
-title = 'Your Name'
+title = 'Degui Zhi'
 theme = 'PaperMod'
 
 # Enable emoji support
@@ -13,8 +13,8 @@ buildExpired = false
 
 [params]
   # Site description for SEO
-  description = "Personal website"
-  author = "Your Name"
+  description = "Professor of Biomedical Informatics"
+  author = "Degui Zhi"
 
   # Show reading time
   ShowReadingTime = true
@@ -26,9 +26,9 @@ buildExpired = false
   ShowRssButtonInSectionTermList = true
 
   # Home page settings
-  homeInfoParams.Title = "Your Name"
+  homeInfoParams.Title = "Degui Zhi"
   homeInfoParams.Content = """
-Welcome to my personal site.
+Professor of Biomedical Informatics at UTHealth.
 
 [About](/about/) | [Projects](/projects/) | [Blog](/posts/)
 """
