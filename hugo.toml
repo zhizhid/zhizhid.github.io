@@ -1,0 +1,110 @@
+baseURL = 'https://example.org/'
+languageCode = 'en-us'
+title = 'Your Name'
+theme = 'PaperMod'
+
+# Enable emoji support
+enableEmoji = true
+
+# Build settings
+buildDrafts = false
+buildFuture = false
+buildExpired = false
+
+[params]
+  # Site description for SEO
+  description = "Personal website"
+  author = "Your Name"
+
+  # Show reading time
+  ShowReadingTime = true
+  ShowShareButtons = true
+  ShowPostNavLinks = true
+  ShowBreadCrumbs = true
+  ShowCodeCopyButtons = true
+  ShowWordCount = false
+  ShowRssButtonInSectionTermList = true
+
+  # Home page settings
+  homeInfoParams.Title = "Your Name"
+  homeInfoParams.Content = """
+Welcome to my personal site.
+
+[About](/about/) | [Projects](/projects/) | [Blog](/posts/)
+"""
+
+  # Social icons
+  [[params.socialIcons]]
+    name = "email"
+    url = "mailto:your@email.com"
+
+  [[params.socialIcons]]
+    name = "googlescholar"
+    url = "https://scholar.google.com/citations?user=YOUR_ID"
+
+  [[params.socialIcons]]
+    name = "github"
+    url = "https://github.com/yourusername"
+
+  # Default theme (light/dark/auto)
+  defaultTheme = "auto"
+
+  # Disable theme toggle
+  disableThemeToggle = false
+
+[params.cover]
+  hidden = false
+  hiddenInList = false
+  hiddenInSingle = false
+
+[params.editPost]
+  disabled = true
+
+# Search
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+
+[params.fuseOpts]
+  isCaseSensitive = false
+  shouldSort = true
+  location = 0
+  distance = 1000
+  threshold = 0.4
+  minMatchCharLength = 0
+  keys = ["title", "permalink", "summary", "content"]
+
+# Menu
+[menu]
+  [[menu.main]]
+    identifier = "about"
+    name = "About"
+    url = "/about/"
+    weight = 10
+
+  [[menu.main]]
+    identifier = "projects"
+    name = "Projects"
+    url = "/projects/"
+    weight = 20
+
+  [[menu.main]]
+    identifier = "blog"
+    name = "Blog"
+    url = "/posts/"
+    weight = 30
+
+  [[menu.main]]
+    identifier = "cv"
+    name = "CV"
+    url = "/cv.pdf"
+    weight = 40
+
+# Markup settings
+[markup]
+  [markup.highlight]
+    style = "github"
+    lineNos = false
+    noClasses = false
+
+  [markup.goldmark.renderer]
+    unsafe = true
