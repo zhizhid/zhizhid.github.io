@@ -36,15 +36,11 @@ Professor of Biomedical Informatics at UTHealth.
   # Social icons
   [[params.socialIcons]]
     name = "email"
-    url = "mailto:your@email.com"
+    url = "mailto:zhi.degui@gmail.com"
 
   [[params.socialIcons]]
     name = "googlescholar"
-    url = "https://scholar.google.com/citations?user=YOUR_ID"
-
-  [[params.socialIcons]]
-    name = "github"
-    url = "https://github.com/yourusername"
+    url = "https://scholar.google.com/citations?user=9dmZ3lkAAAAJ"
 
   # Default theme (light/dark/auto)
   defaultTheme = "auto"
