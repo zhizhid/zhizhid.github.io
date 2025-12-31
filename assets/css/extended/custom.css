@@ -266,13 +266,14 @@ hr {
 @media (max-width: 768px) {
   .post-wrapper {
     flex-direction: column;
+    gap: 0;
   }
 
   .sidebar {
     width: 100%;
     order: -1;
     padding-top: 0;
-    margin-bottom: 0.5rem;
+    margin-bottom: 0;
   }
 
   .sidebar-toggle {
@@ -282,8 +283,16 @@ hr {
     border-bottom: none;
   }
 
+  .post-single {
+    padding-top: 0;
+  }
+
   .post-header {
     padding-top: 0;
+  }
+
+  .breadcrumbs {
+    margin-top: 0.5rem;
   }
 
   h1.post-title {
