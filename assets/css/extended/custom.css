@@ -34,9 +34,14 @@ h2 {
 
 /* Content width and spacing */
 .main {
-  max-width: var(--content-max-width);
+  max-width: 900px;
   margin: 0 auto;
   padding: 0 1.5rem;
+}
+
+/* Override for post pages with sidebar */
+.post-wrapper .main {
+  max-width: none;
 }
 
 .post-content {
@@ -166,7 +171,7 @@ hr {
 .post-wrapper {
   display: flex;
   gap: 3rem;
-  max-width: 1000px;
+  max-width: 1100px;
   margin: 0 auto;
   padding: 0 1.5rem;
 }
@@ -174,10 +179,11 @@ hr {
 .post-wrapper .post-single {
   flex: 1;
   min-width: 0;
+  max-width: 750px;
 }
 
 .sidebar {
-  width: 220px;
+  width: 200px;
   flex-shrink: 0;
   padding-top: 2rem;
 }
