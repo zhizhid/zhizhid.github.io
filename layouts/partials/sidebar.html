@@ -4,7 +4,7 @@
     {{ range where .Site.RegularPages "Section" "posts" }}
     <li>
       <a href="{{ .Permalink }}">{{ .Title }}</a>
-      <span class="sidebar-date">{{ .Date.Format "Jan 2, 2006" }}</span>
+      <span class="sidebar-date">{{ .Date.Format "January 2006" }}</span>
     </li>
     {{ end }}
   </ul>
@@ -13,7 +13,7 @@
 document.addEventListener('DOMContentLoaded', function() {
   const toggle = document.querySelector('.sidebar-toggle');
   const posts = document.querySelector('.sidebar-posts');
-  if (toggle && posts && window.innerWidth <= 768) {
+  if (toggle && posts) {
     posts.classList.add('collapsed');
     toggle.addEventListener('click', function() {
       posts.classList.toggle('collapsed');
