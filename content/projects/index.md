@@ -30,6 +30,8 @@ A distributed representation embedding model for genes based on their co-express
 
 Advanced Positional Burrows-Wheeler Transform (PBWT) data structures and algorithms for population genetics informatics, enabling efficient haplotype matching and identity-by-descent detection at biobank scale.
 
+[Project Page](https://github.com/zhizhid/PBWT-algorithms-and-applications)
+
 ---
 
 ## Deep Learning for Imaging Endophenotypes
