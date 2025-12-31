@@ -1,0 +1,11 @@
+<aside class="sidebar">
+  <h3>All Posts</h3>
+  <ul class="sidebar-posts">
+    {{ range where .Site.RegularPages "Section" "posts" }}
+    <li>
+      <a href="{{ .Permalink }}">{{ .Title }}</a>
+      <span class="sidebar-date">{{ .Date.Format "Jan 2, 2006" }}</span>
+    </li>
+    {{ end }}
+  </ul>
+</aside>
