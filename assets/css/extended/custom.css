@@ -272,10 +272,21 @@ hr {
     width: 100%;
     order: -1;
     padding-top: 0;
-    margin-bottom: 1rem;
+    margin-bottom: 0.5rem;
   }
 
   .sidebar-toggle {
-    border-bottom: 1px solid var(--border);
+    padding: 0.25rem 0;
+    margin-bottom: 0;
+    font-size: 0.85rem;
+    border-bottom: none;
+  }
+
+  .post-header {
+    padding-top: 0;
+  }
+
+  h1.post-title {
+    margin-top: 0.5rem;
   }
 }
