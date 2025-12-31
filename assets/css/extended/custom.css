@@ -1,0 +1,163 @@
+/* Dario Amodei-inspired styling */
+
+/* Typography */
+:root {
+  --font-family: "Playfair Display", Georgia, "Times New Roman", serif;
+  --content-max-width: 680px;
+  --theme: #faf9f6;
+}
+
+body {
+  font-family: var(--font-family);
+  letter-spacing: -0.01em;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--theme);
+}
+
+/* Cleaner headings */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-family);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+h1 {
+  font-size: 2.5rem;
+  line-height: 1.15;
+}
+
+h2 {
+  font-size: 1.5rem;
+  margin-top: 2.5rem;
+}
+
+/* Content width and spacing */
+.main {
+  max-width: var(--content-max-width);
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.post-content {
+  line-height: 1.75;
+  font-size: 1.05rem;
+}
+
+.post-content p {
+  margin-bottom: 1.5rem;
+}
+
+/* Subtle, professional links */
+.post-content a {
+  text-decoration: none;
+  color: inherit;
+  border-bottom: 1px solid var(--secondary);
+  transition: border-color 0.2s ease;
+}
+
+.post-content a:hover {
+  border-bottom-color: var(--primary);
+}
+
+/* Cleaner header */
+.nav {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+header .logo a {
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+/* Homepage styling */
+.first-entry {
+  border: none;
+  background: transparent;
+}
+
+.home-info {
+  padding: 2rem 0;
+}
+
+.home-info .entry-content {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  max-width: var(--content-max-width);
+}
+
+/* Cleaner post list */
+.post-entry {
+  border: none;
+  border-bottom: 1px solid var(--border);
+  margin-bottom: 0;
+  padding: 1.5rem 0;
+}
+
+.post-entry:first-of-type {
+  padding-top: 0;
+}
+
+.entry-header h2 {
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+}
+
+.entry-content {
+  font-size: 0.95rem;
+  color: var(--secondary);
+}
+
+/* Minimal footer */
+.footer {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem;
+}
+
+/* Social icons - more subtle */
+.social-icons a {
+  opacity: 0.7;
+  transition: opacity 0.2s ease;
+}
+
+.social-icons a:hover {
+  opacity: 1;
+}
+
+/* Dark mode refinements */
+.dark {
+  --border: rgba(255, 255, 255, 0.1);
+}
+
+/* Separator lines */
+hr {
+  border: none;
+  border-top: 1px solid var(--border);
+  margin: 2rem 0;
+}
+
+/* Page title styling */
+.post-title {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.post-description {
+  font-size: 1.1rem;
+  color: var(--secondary);
+  margin-bottom: 2rem;
+}
+
+/* Remove unnecessary decorations */
+.post-meta {
+  font-size: 0.9rem;
+  color: var(--secondary);
+}
+
+/* Cleaner menu */
+#menu a {
+  font-size: 0.95rem;
+  font-weight: 500;
+}
