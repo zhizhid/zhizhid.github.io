@@ -176,6 +176,13 @@ hr {
   font-weight: 500;
 }
 
+/* Profile image */
+.post-content img[alt="Degui Zhi"] {
+  max-width: 300px;
+  border-radius: 8px;
+  margin-bottom: 1.5rem;
+}
+
 /* Sidebar layout */
 .post-wrapper {
   display: flex;

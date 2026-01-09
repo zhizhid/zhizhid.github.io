@@ -6,6 +6,8 @@ summary: "About me"
 ShowToc: false
 ---
 
+![Degui Zhi](/images/profile.jpg)
+
 ## Degui Zhi
 
 Professor of Biomedical Informatics at [UTHealth](https://www.uth.edu/)
